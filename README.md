@@ -1,106 +1,84 @@
-# Multi-Language Programming Pack
+# Advanced C++ Complete Repository
 
-This repository is a broad multilingual starter pack containing practical example programs for many of the most-used programming languages.
+This repository is a complete advanced C++ learning pack designed for modern C++ development. It includes a wide variety of topics and practical examples to help you move from intermediate to advanced C++.
 
-Important note:
-There are hundreds of programming languages. No single repository can literally include every language ever created, but this repo covers the major and widely-used languages in software development so you have a comprehensive starter collection in one place.
+## Included topics
 
-## Included languages
-
-- C
-- C++
-- C#
-- Java
-- Python
-- JavaScript
-- TypeScript
-- Go
-- Rust
-- Ruby
-- PHP
-- Swift
-- Kotlin
-- Dart
-- Scala
-- Lua
-- Bash
-- SQL
-- HTML
-- CSS
+- Basic syntax and modern C++ features
+- OOP and encapsulation
+- Inheritance and polymorphism
+- Operator overloading
+- Templates and generic programming
+- Type traits and decltype
+- Smart pointers and memory safety
+- STL containers and algorithms
+- File input/output and binary files
+- Multithreading and synchronization
+- Exception handling
+- Mini real-world console projects
+- Advanced project systems for practical software engineering
 
 ## Repository structure
 
-```text
-multi-language-pack/
-├── README.md
-├── C/
-│   └── hello.c
-├── C++/
-│   └── hello.cpp
-├── CSharp/
-│   └── Hello.cs
-├── Java/
-│   └── Hello.java
-├── Python/
-│   └── hello.py
-├── JavaScript/
-│   └── hello.js
-├── TypeScript/
-│   └── hello.ts
-├── Go/
-│   └── hello.go
-├── Rust/
-│   └── main.rs
-├── Ruby/
-│   └── hello.rb
-├── PHP/
-│   └── hello.php
-├── Swift/
-│   └── hello.swift
-├── Kotlin/
-│   └── Main.kt
-├── Dart/
-│   └── main.dart
-├── Scala/
-│   └── Hello.scala
-├── Lua/
-│   └── hello.lua
-├── Bash/
-│   └── hello.sh
-├── SQL/
-│   └── hello.sql
-├── HTML/
-│   └── index.html
-├── CSS/
-│   └── style.css
-└── LICENSE
+- 01_basics/
+- 02_oop/
+- 03_stl/
+- 04_templates/
+- 05_memory/
+- 06_concurrency/
+- 07_file_io/
+- 08_projects/
+
+## Build
+
+```bash
+mkdir build
+cd build
+cmake ..
+cmake --build .
 ```
 
-## How to run
+## Run examples
 
-- C: `gcc hello.c -o hello && ./hello`
-- C++: `g++ hello.cpp -o hello && ./hello`
-- C#: `dotnet new console && dotnet run`
-- Java: `javac Hello.java && java Hello`
-- Python: `python hello.py`
-- JavaScript: `node hello.js`
-- TypeScript: `tsc hello.ts && node hello.js`
-- Go: `go run hello.go`
-- Rust: `rustc main.rs && ./main`
-- Ruby: `ruby hello.rb`
-- PHP: `php hello.php`
-- Swift: `swift hello.swift`
-- Kotlin: `kotlinc Main.kt -include-runtime -d Main.jar && java -jar Main.jar`
-- Dart: `dart run main.dart`
-- Scala: `scalac Hello.scala && scala Hello`
-- Lua: `lua hello.lua`
-- Bash: `bash hello.sh`
-- SQL: run in a database client or sqlite3
-- HTML/CSS: open in a browser
+```bash
+./hello
+./types_and_casts
+./person
+./inheritance_demo
+./polymorphism_demo
+./operator_overloading_demo
+./vector_demo
+./map_demo
+./unordered_map_demo
+./queue_stack_demo
+./algorithm_demo
+./template_function_demo
+./template_class_demo
+./variadic_template_demo
+./traits_demo
+./decltype_demo
+./smart_ptr_demo
+./unique_ptr_array_demo
+./exception_demo
+./thread_demo
+./mutex_demo
+./async_demo
+./condition_variable_demo
+./file_io_demo
+./binary_io_demo
+./calculator
+./todo_app
+./atm_simulator
+./student_management
+./employee_management
+./banking_system
+./library_management
+./inventory_system
+```
 
 ## Notes
 
-This repo is meant to be a universal starter-set for learning and building across many languages. Use it as a base library and expand with projects, frameworks, and advanced examples.
+This repository is intentionally structured as a practical learning library for C++ developers. It is ideal for learners, interview preparation, and project-style study.
 
 ## License
 
