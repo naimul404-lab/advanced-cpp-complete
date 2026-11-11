@@ -1,6 +1,21 @@
 # Advanced C++ Complete Repository
 
-This repository is a practical, advanced C++ learning pack for modern C++ development. It includes examples on object-oriented programming, STL, templates, smart pointers, concurrency, file I/O, and small projects.
+This repository is a complete advanced C++ learning pack designed for modern C++ development. It includes a wide variety of topics and practical examples to help you move from intermediate to advanced C++.
+
+## Included topics
+
+- Basic syntax and modern C++ features
+- OOP and encapsulation
+- Inheritance and polymorphism
+- Operator overloading
+- Templates and generic programming
+- Type traits and decltype
+- Smart pointers and memory safety
+- STL containers and algorithms
+- File input/output and binary files
+- Multithreading and synchronization
+- Exception handling
+- Mini real-world console projects
 
 ## Repository structure
 
@@ -22,28 +37,38 @@ cmake ..
 cmake --build .
 ```
 
-Then run any executable from the build directory.
-
-## Example usage
+## Run examples
 
 ```bash
 ./hello
+./types_and_casts
+./person
+./inheritance_demo
+./polymorphism_demo
+./operator_overloading_demo
 ./vector_demo
+./map_demo
+./unordered_map_demo
+./template_function_demo
+./template_class_demo
+./variadic_template_demo
+./traits_demo
 ./smart_ptr_demo
+./exception_demo
+./thread_demo
+./mutex_demo
+./async_demo
+./file_io_demo
+./binary_io_demo
 ./calculator
+./todo_app
+./atm_simulator
+./student_management
 ```
 
-## Topics covered
+## Notes
 
-- Basic syntax and types
-- OOP and inheritance
-- Polymorphism and virtual functions
-- STL containers and algorithms
-- Templates and variadic templates
-- Smart pointers and memory management
-- Threads and mutexes
-- File I/O
-- Mini real-world console applications
+This repository is intentionally structured as a practical learning library for C++ developers. It is ideal for learners, interview preparation, and project-style study.
 
 ## License
 
