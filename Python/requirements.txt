@@ -1,0 +1,2 @@
+# Core dependencies for examples
+# No third-party package is required for the starter pack.
