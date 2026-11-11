@@ -1,85 +1,49 @@
-# Advanced C++ Complete Repository
+# Advanced C++ Learning and Project Pack
 
-This repository is a complete advanced C++ learning pack designed for modern C++ development. It includes a wide variety of topics and practical examples to help you move from intermediate to advanced C++.
-
-## Included topics
-
-- Basic syntax and modern C++ features
-- OOP and encapsulation
-- Inheritance and polymorphism
-- Operator overloading
-- Templates and generic programming
-- Type traits and decltype
-- Smart pointers and memory safety
-- STL containers and algorithms
-- File input/output and binary files
-- Multithreading and synchronization
-- Exception handling
-- Mini real-world console projects
-- Advanced project systems for practical software engineering
-
-## Repository structure
-
-- 01_basics/
-- 02_oop/
-- 03_stl/
-- 04_templates/
-- 05_memory/
-- 06_concurrency/
-- 07_file_io/
-- 08_projects/
+A practical C++17 learning repository with standalone examples and console projects. It covers language fundamentals, object-oriented design, STL, templates, memory management, concurrency, file I/O, and project structure.
 
 ## Build
 
-```bash
-mkdir build
-cd build
-cmake ..
-cmake --build .
-```
-
-## Run examples
+Requirements: a C++17 compiler and CMake 3.16 or newer.
 
 ```bash
-./hello
-./types_and_casts
-./person
-./inheritance_demo
-./polymorphism_demo
-./operator_overloading_demo
-./vector_demo
-./map_demo
-./unordered_map_demo
-./queue_stack_demo
-./algorithm_demo
-./template_function_demo
-./template_class_demo
-./variadic_template_demo
-./traits_demo
-./decltype_demo
-./smart_ptr_demo
-./unique_ptr_array_demo
-./exception_demo
-./thread_demo
-./mutex_demo
-./async_demo
-./condition_variable_demo
-./file_io_demo
-./binary_io_demo
-./calculator
-./todo_app
-./atm_simulator
-./student_management
-./employee_management
-./banking_system
-./library_management
-./inventory_system
+cmake -S . -B build
+cmake --build build --parallel
 ```
 
-## Notes
+Each example is a separate executable. Run one from the build directory, for example:
 
-This repository is intentionally structured as a practical learning library for C++ developers. It is ideal for learners, interview preparation, and project-style study.
+```bash
+./build/tic_tac_toe
+./build/expense_tracker
+```
+
+On Windows, executables have the `.exe` extension. IDE users can open this directory in an IDE with CMake support.
+
+## Project pack
+
+- `calculator`: arithmetic calculator with division-by-zero handling
+- `todo_app`: in-memory task list
+- `atm_simulator`: basic ATM menu simulation (demo only; not a real banking system)
+- `student_management`: simple student records demonstration
+- `employee_management`: employee records demonstration
+- `banking_system`: in-memory account/deposit/withdraw simulation (demo only)
+- `library_management`: borrow/return book demonstration
+- `inventory_system`: stock management demonstration
+- `tic_tac_toe`: two-player terminal game
+- `expense_tracker`: add/list expenses, saved to a local CSV-style file
+- `word_counter`: count words, lines, and characters in a text file
+
+These are educational console applications, not production-ready financial or data-management systems. Data files are local to the current working directory.
+
+## Learning examples
+
+Examples are grouped in `01_basics/` through `07_file_io/`. Each source file can be read independently. CMake target names are listed in `CMakeLists.txt`.
+
+## Multi-language examples
+
+The repository also contains introductory examples in several other languages. CMake builds only the C++ targets; other language examples need their respective toolchains.
 
 ## License
 
-MIT
+MIT. See `LICENSE`.

@@ -1,5 +1,6 @@
-#include <iostream>
+#include <chrono>
 #include <condition_variable>
+#include <iostream>
 #include <mutex>
 #include <thread>
 
@@ -10,19 +11,17 @@ bool ready = false;
 void worker() {
     std::unique_lock<std::mutex> lock(mtx);
     cv.wait(lock, [] { return ready; });
-    std::cout << "Worker resumed." << std::endl;
+    std::cout << "Worker resumed.\n";
 }
 
 int main() {
     std::thread t(worker);
-
-    std::this_thread::sleep_for(std::chrono::milliseconds(500));
+    std::this_thread::sleep_for(std::chrono::milliseconds(100));
     {
         std::lock_guard<std::mutex> lock(mtx);
         ready = true;
     }
     cv.notify_one();
     t.join();
-
     return 0;
 }
